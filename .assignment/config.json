@@ -1,0 +1,695 @@
+{
+  "name": "Rustlings 作业",
+  "description": "Rustlings",
+  "type": "OS",
+  "status": "open",
+  "id": "week-2",
+  "version": 1,
+  "config_version": 1,
+  "auto_grade": {
+    "enable": true,
+    "upload_output": true,
+    "steps": [
+      {
+        "title": "Setup environment",
+        "timeout": 300,
+        "command": "bash .assignment/setup-rust.sh",
+        "score": 0,
+        "required": true
+      },
+      {
+        "title": "Run rustlings",
+        "timeout": 300,
+        "command": "cargo test --test cicv --verbose",
+        "score": 0,
+        "required": true
+      },
+      {
+        "title": "intro1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json intro1",
+        "score": 1
+      },
+      {
+        "title": "intro2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json intro2",
+        "score": 1
+      },
+      {
+        "title": "variables1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json variables1",
+        "score": 1
+      },
+      {
+        "title": "variables2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json variables2",
+        "score": 1
+      },
+      {
+        "title": "variables3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json variables3",
+        "score": 1
+      },
+      {
+        "title": "variables4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json variables4",
+        "score": 1
+      },
+      {
+        "title": "variables5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json variables5",
+        "score": 1
+      },
+      {
+        "title": "variables6",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json variables6",
+        "score": 1
+      },
+      {
+        "title": "functions1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json functions1",
+        "score": 1
+      },
+      {
+        "title": "functions2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json functions2",
+        "score": 1
+      },
+      {
+        "title": "functions3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json functions3",
+        "score": 1
+      },
+      {
+        "title": "functions4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json functions4",
+        "score": 1
+      },
+      {
+        "title": "functions5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json functions5",
+        "score": 1
+      },
+      {
+        "title": "if1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json if1",
+        "score": 1
+      },
+      {
+        "title": "if2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json if2",
+        "score": 1
+      },
+      {
+        "title": "if3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json if3",
+        "score": 1
+      },
+      {
+        "title": "quiz1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json quiz1",
+        "score": 1
+      },
+      {
+        "title": "primitive_types1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json primitive_types1",
+        "score": 1
+      },
+      {
+        "title": "primitive_types2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json primitive_types2",
+        "score": 1
+      },
+      {
+        "title": "primitive_types3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json primitive_types3",
+        "score": 1
+      },
+      {
+        "title": "primitive_types4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json primitive_types4",
+        "score": 1
+      },
+      {
+        "title": "primitive_types5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json primitive_types5",
+        "score": 1
+      },
+      {
+        "title": "primitive_types6",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json primitive_types6",
+        "score": 1
+      },
+      {
+        "title": "vecs1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json vecs1",
+        "score": 1
+      },
+      {
+        "title": "vecs2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json vecs2",
+        "score": 1
+      },
+      {
+        "title": "move_semantics1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json move_semantics1",
+        "score": 1
+      },
+      {
+        "title": "move_semantics2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json move_semantics2",
+        "score": 1
+      },
+      {
+        "title": "move_semantics3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json move_semantics3",
+        "score": 1
+      },
+      {
+        "title": "move_semantics4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json move_semantics4",
+        "score": 1
+      },
+      {
+        "title": "move_semantics5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json move_semantics5",
+        "score": 1
+      },
+      {
+        "title": "move_semantics6",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json move_semantics6",
+        "score": 1
+      },
+      {
+        "title": "structs1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json structs1",
+        "score": 1
+      },
+      {
+        "title": "structs2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json structs2",
+        "score": 1
+      },
+      {
+        "title": "structs3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json structs3",
+        "score": 1
+      },
+      {
+        "title": "enums1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json enums1",
+        "score": 1
+      },
+      {
+        "title": "enums2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json enums2",
+        "score": 1
+      },
+      {
+        "title": "enums3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json enums3",
+        "score": 1
+      },
+      {
+        "title": "strings1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json strings1",
+        "score": 1
+      },
+      {
+        "title": "strings2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json strings2",
+        "score": 1
+      },
+      {
+        "title": "strings3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json strings3",
+        "score": 1
+      },
+      {
+        "title": "strings4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json strings4",
+        "score": 1
+      },
+      {
+        "title": "modules1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json modules1",
+        "score": 1
+      },
+      {
+        "title": "modules2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json modules2",
+        "score": 1
+      },
+      {
+        "title": "modules3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json modules3",
+        "score": 1
+      },
+      {
+        "title": "hashmaps1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json hashmaps1",
+        "score": 1
+      },
+      {
+        "title": "hashmaps2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json hashmaps2",
+        "score": 1
+      },
+      {
+        "title": "hashmaps3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json hashmaps3",
+        "score": 1
+      },
+      {
+        "title": "quiz2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json quiz2",
+        "score": 1
+      },
+      {
+        "title": "options1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json options1",
+        "score": 1
+      },
+      {
+        "title": "options2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json options2",
+        "score": 1
+      },
+      {
+        "title": "options3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json options3",
+        "score": 1
+      },
+      {
+        "title": "errors1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json errors1",
+        "score": 1
+      },
+      {
+        "title": "errors2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json errors2",
+        "score": 1
+      },
+      {
+        "title": "errors3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json errors3",
+        "score": 1
+      },
+      {
+        "title": "errors4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json errors4",
+        "score": 1
+      },
+      {
+        "title": "errors5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json errors5",
+        "score": 1
+      },
+      {
+        "title": "errors6",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json errors6",
+        "score": 1
+      },
+      {
+        "title": "generics1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json generics1",
+        "score": 1
+      },
+      {
+        "title": "generics2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json generics2",
+        "score": 1
+      },
+      {
+        "title": "traits1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json traits1",
+        "score": 1
+      },
+      {
+        "title": "traits2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json traits2",
+        "score": 1
+      },
+      {
+        "title": "traits3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json traits3",
+        "score": 1
+      },
+      {
+        "title": "traits4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json traits4",
+        "score": 1
+      },
+      {
+        "title": "traits5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json traits5",
+        "score": 1
+      },
+      {
+        "title": "quiz3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json quiz3",
+        "score": 1
+      },
+      {
+        "title": "lifetimes1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json lifetimes1",
+        "score": 1
+      },
+      {
+        "title": "lifetimes2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json lifetimes2",
+        "score": 1
+      },
+      {
+        "title": "lifetimes3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json lifetimes3",
+        "score": 1
+      },
+      {
+        "title": "tests1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests1",
+        "score": 1
+      },
+      {
+        "title": "tests2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests2",
+        "score": 1
+      },
+      {
+        "title": "tests3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests3",
+        "score": 1
+      },
+      {
+        "title": "tests4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests4",
+        "score": 1
+      },
+      {
+        "title": "iterators1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json iterators1",
+        "score": 1
+      },
+      {
+        "title": "iterators2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json iterators2",
+        "score": 1
+      },
+      {
+        "title": "iterators3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json iterators3",
+        "score": 1
+      },
+      {
+        "title": "iterators4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json iterators4",
+        "score": 1
+      },
+      {
+        "title": "iterators5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json iterators5",
+        "score": 1
+      },
+      {
+        "title": "box1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json box1",
+        "score": 1
+      },
+      {
+        "title": "rc1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json rc1",
+        "score": 1
+      },
+      {
+        "title": "arc1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json arc1",
+        "score": 1
+      },
+      {
+        "title": "cow1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json cow1",
+        "score": 1
+      },
+      {
+        "title": "threads1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json threads1",
+        "score": 1
+      },
+      {
+        "title": "threads2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json threads2",
+        "score": 1
+      },
+      {
+        "title": "threads3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json threads3",
+        "score": 1
+      },
+      {
+        "title": "macros1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json macros1",
+        "score": 1
+      },
+      {
+        "title": "macros2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json macros2",
+        "score": 1
+      },
+      {
+        "title": "macros3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json macros3",
+        "score": 1
+      },
+      {
+        "title": "macros4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json macros4",
+        "score": 1
+      },
+      {
+        "title": "clippy1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json clippy1",
+        "score": 1
+      },
+      {
+        "title": "clippy2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json clippy2",
+        "score": 1
+      },
+      {
+        "title": "clippy3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json clippy3",
+        "score": 1
+      },
+      {
+        "title": "using_as",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json using_as",
+        "score": 1
+      },
+      {
+        "title": "from_into",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json from_into",
+        "score": 1
+      },
+      {
+        "title": "from_str",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json from_str",
+        "score": 1
+      },
+      {
+        "title": "try_from_into",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json try_from_into",
+        "score": 1
+      },
+      {
+        "title": "as_ref_mut",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json as_ref_mut",
+        "score": 1
+      },
+      {
+        "title": "tests5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests5",
+        "score": 1
+      },
+      {
+        "title": "tests6",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests6",
+        "score": 1
+      },
+      {
+        "title": "tests7",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests7",
+        "score": 1
+      },
+      {
+        "title": "tests8",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests8",
+        "score": 1
+      },
+      {
+        "title": "tests9",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json tests9",
+        "score": 1
+      },
+      {
+        "title": "algorithm1",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm1",
+        "score": 1
+      },
+      {
+        "title": "algorithm2",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm2",
+        "score": 1
+      },
+      {
+        "title": "algorithm3",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm3",
+        "score": 1
+      },
+      {
+        "title": "algorithm4",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm4",
+        "score": 1
+      },
+      {
+        "title": "algorithm5",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm5",
+        "score": 1
+      },
+      {
+        "title": "algorithm6",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm6",
+        "score": 1
+      },
+      {
+        "title": "algorithm7",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm7",
+        "score": 1
+      },
+      {
+        "title": "algorithm8",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm8",
+        "score": 1
+      },
+      {
+        "title": "algorithm9",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm9",
+        "score": 1
+      },
+      {
+        "title": "algorithm10",
+        "timeout": 10,
+        "command": "python3 .assignment/grades.py .github/result/check_result.json algorithm10",
+        "score": 1
+      }
+    ]
+  }
+}
